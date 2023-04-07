@@ -8,6 +8,7 @@ import {GiTempleDoor} from 'react-icons/gi'
 import axios from "axios";
 
 const Weather = ()=>{
+    const token = process.env.weather_token
     const [location, setLocation] = useState("")
     const [temp, setTemp] = useState("")
     const [wind, setWind] = useState("")
