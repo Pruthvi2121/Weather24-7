@@ -34,7 +34,7 @@ const Weather = ()=>{
 
     const handlesubmit =async e=>{
         e.preventDefault();
-        await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=0b475a52da05cde046f9651f61b87e5c&units=metric`)
+        await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${token}=metric`)
         .then((res)=>{
             console.log(res)
             setTemp(res.data.main.temp)
